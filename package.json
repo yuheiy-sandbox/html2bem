@@ -1,0 +1,22 @@
+{
+  "name": "html2bem",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "lodash.uniq": "^4.5.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-radio-group": "^3.0.2",
+    "react-scripts": "1.0.13"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "npm run build && cp -r build/ docs/ && git add docs/"
+  }
+}
