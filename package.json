@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "npm run build && cp -r build/ docs/ && git add docs/"
-  }
+    "precommit": "rm -rf docs/ && npm run build && cp -r build/ docs/ && git add docs/"
+  },
+  "homepage": "https://yuheiy.github.io/html2bem"
 }
